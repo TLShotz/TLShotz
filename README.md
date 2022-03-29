@@ -1,6 +1,9 @@
 ### 🙏
 
 <a href="https://ibb.co/3hqL6HN"><img src="https://i.ibb.co/XJgv0Ts/IMG-4458.jpg" alt="IMG-4458" border="0"></a><br />
+rest in piece, really goes to show how easily you can die
+
+learning html now because python is too difficult
 
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
