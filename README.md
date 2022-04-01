@@ -1,5 +1,26 @@
 ### 🙏
 
+april fools lol
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 playing the game on survivor difficulty, will be posting images here (sorry if quality sucks)
 and i'm terrible at the game :D
 
