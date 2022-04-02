@@ -1,5 +1,6 @@
-### 🙏
+###
 
+<p>i dont know what to add on this so like, if u ever come across this send me some random text or image to put in</p>
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
