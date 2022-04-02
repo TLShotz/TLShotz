@@ -1,9 +1,6 @@
 ### 🙏
 
-april fools lol
-
-pretend ur very sad or something
-
+[lol.zip](https://github.com/TLShotz/TLShotz/files/8403360/lol.zip)
 
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
