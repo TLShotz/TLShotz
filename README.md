@@ -1,12 +1,5 @@
 ###
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>RickRolled</title>
-</head>
-<body>
   
   <img id="rickroll" src="http://stream1.gifsoup.com/view3/2289359/rick-roll-o.gif"/> 
   <img id="image" src="http://fc03.deviantart.net/fs70/i/2012/084/c/7/rick_roll_by_idonthaveaname999-d4twtuv.jpg"/>
