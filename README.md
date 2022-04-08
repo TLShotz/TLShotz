@@ -1,7 +1,7 @@
 ###
 
   
-  <img id="rickroll" src="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ"/> 
+  <img src="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ"/> 
 </body>
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
