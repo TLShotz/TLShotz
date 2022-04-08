@@ -1,6 +1,6 @@
 ###
 
-<p>i dont know what to add on this so like, if u ever come across this send me some random text or image to put in</p>
+<iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ">via GIPHY</a></p>
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
