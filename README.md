@@ -1,9 +1,7 @@
 ###
 <div><iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <p>LOL</p>
-<audio loop autoplay>
-    <source src="D:\KylePC\Desktop\New folder (4)" type="Never/mp3">
-</audio>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@toasted_den/video/7077907948613225733" data-video-id="7077907948613225733" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@toasted_den" href="https://www.tiktok.com/@toasted_den">@toasted_den</a> Find the hypotenuse of a 5.56mm caliber round heading towards you at a million mikes per-hour… <a title="vr" target="_blank" href="https://www.tiktok.com/tag/vr">#vr</a> <a title="virtualreality" target="_blank" href="https://www.tiktok.com/tag/virtualreality">#virtualreality</a> <a title="vrfunnymoments" target="_blank" href="https://www.tiktok.com/tag/vrfunnymoments">#vrfunnymoments</a> <a title="funny" target="_blank" href="https://www.tiktok.com/tag/funny">#funny</a> <a title="gaming" target="_blank" href="https://www.tiktok.com/tag/gaming">#gaming</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">#fyp</a> <a title="pavlov" target="_blank" href="https://www.tiktok.com/tag/pavlov">#pavlov</a> <a title="pavlovvr" target="_blank" href="https://www.tiktok.com/tag/pavlovvr">#pavlovvr</a> <a title="pavlovfunnymoments" target="_blank" href="https://www.tiktok.com/tag/pavlovfunnymoments">#pavlovfunnymoments</a> <a title="math" target="_blank" href="https://www.tiktok.com/tag/math">#math</a> <a title="school" target="_blank" href="https://www.tiktok.com/tag/school">#school</a> <a title="class" target="_blank" href="https://www.tiktok.com/tag/class">#class</a> @range_monster <a target="_blank" title="♬ Prove its a triangle - Toasted_Den" href="https://www.tiktok.com/music/Prove-its-a-triangle-7077907931697842949">♬ Prove its a triangle - Toasted_Den</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 <!--
 **TLShotz/TLShotz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
