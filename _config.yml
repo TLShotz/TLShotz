@@ -1,5 +1,0 @@
-// _config.yml
-
-  # Build settings
-- theme: minima
-+ remote_theme: jekyll/minima
