@@ -1,5 +1,4 @@
 ###
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/240lbxpeOL5QN9YWvTLFK4?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5YAzQq5wH9U6yAVekgedMr?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/48TC7fm3OiXFFGpbeTK4il?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3gObWyBqpOkNepe6Rv5B48?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
