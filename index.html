@@ -1,71 +1,92 @@
+<!-- Filename:index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <title>
+          How to Make Dark Mode for Websites using HTML CSS & JavaScript  ?
+      </title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-</style>
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<body>
+    <h1>TLShotz ツ</h1>
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text</p>
-</div>
+    <p>
+        👋👋👋
+        
+    </p>
 
+    <img src=
+"https://cdn.discordapp.com/attachments/747509929933406210/1241648607069732904/4f751e8ea1018710ff428173561a514f.png?ex=664af6e0&is=6649a560&hm=23029d69e7dae8521daa4ab8de7b585e0efdae5fd19e4ab5003f2058b27284ee&" />
 
+<html>
+    <head>
+        <title>HTML Links</title>
+    </head>
+
+    <body>
+        <p>My links!</p>
+        <a href="https://www.youtube.com/channel/UCucFVqoIRm3bPIrym2XSjig"
+        target="_blank"
+            >Youtube Channel</a>
+        </body>
+        <body>
+            <a href="https://www.discord.gg/2pYVR74jFE"
+            target="_blank"
+                >My Discord Server</a
+            >
+        </body>
+</html>
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+            
+        }
+    </script>
 </body>
 </html>
-<h2><center>Now Loading...<center></h2>
-
-  
+<a hidden>
+<audio autoplay>
+    <source src="GFG.ogg" type="audio/ogg">
+    <source src=
+"Sweden.mp3"
+            type="audio/mpeg">
+</audio>
+</body>
+</a>
+</html>
+<meta http-equiv="refresh" content="300;url=https://www.youtube.com/watch?v=J8mNG3GDZv8/" />
