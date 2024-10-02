@@ -1,93 +1,101 @@
-<!-- Filename:index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" 
-          content="IE=edge" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0" />
-    <title>
-         TLShotz's Page
-      </title>
-    <style>
-        body {
-            padding: 25px;
-            background-color: black;
-            color: white;
-            font-size: 25px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    /* Slight dark mode background */
+    body {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
 
-        .dark-mode {
-            background-color: black;
-            color: white;
-        }
+    /* Center the text */
+    .container {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(100px); /* Start below the screen */
+      animation: slide-in 1s forwards; /* Slide in animation */
+    }
 
-        .light-mode {
-            background-color: white;
-            color: black;
-        }
-    </style>
+    #typewriter {
+      font-size: 24px;
+    }
+
+    /* Dots animation */
+    .dots::after {
+      content: "";
+    }
+
+    /* Keyframes for dots animation */
+    @keyframes dots {
+      0% {
+        content: "";
+      }
+      25% {
+        content: ".";
+      }
+      50% {
+        content: "..";
+      }
+      75% {
+        content: "...";
+      }
+    }
+
+    /* Slide in from bottom */
+    @keyframes slide-in {
+      to {
+        transform: translateY(0); /* Move to center */
+        opacity: 1; /* Fade in */
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <h1>TLShotz ツ</h1>
+  <div class="container">
+    <p>-&nbsp;&nbsp;&nbsp;&nbsp;<span id="typewriter"></span><span class="dots"></span>&nbsp;&nbsp;&nbsp;&nbsp;-</p>
+  </div>
 
-    <p>
-        👋👋👋
-        
-    </p>
+  <script>
+    // Text to display with typewriter effect
+    const text = "Hey, I'm Shotz! Redirecting you to my page :3";
+    let index = 0;
 
-    <iframe
-    title="Discord user embed"
-    width="340"
-    height=192
-    frameborder="0"
-    sandbox="allow-scripts"
-    src="https://widgets.vendicated.dev/user?id=657834370953904130&theme=dark&banner=true&full-banner=true&rounded-corners=true&discord-icon=true&badges=true&guess-nitro=true&"
-></iframe>
+    // Typewriter effect
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById('typewriter').innerHTML = text.substring(0, index + 1);
+        index++;
+        setTimeout(typeWriter, 50); // Adjust speed if needed
+      } else {
+        // After typewriter finishes, start dots animation
+        startDotsAnimation();
+        startRedirect();
+      }
+    }
 
+    // Start the dots animation
+    function startDotsAnimation() {
+      const dots = document.querySelector('.dots');
+      dots.style.animation = 'dots 1s steps(5, end) infinite'; // Start dots animation after typewriter
+    }
 
+    // Redirect after dots animation runs for 3 seconds
+    function startRedirect() {
+      setTimeout(() => {
+        window.location.href = "https://e-z.bio/shotz"; // Replace with your URL
+      }, 3000); // Wait 3 seconds before redirecting
+    }
 
-<html>
-    <head>
-        <title>HTML Links</title>
-    </head>
-
-    <body>
-        <p>My links!</p>
-        <a href=https://linktr.ee/TLShotz
-        target="_blank"
-            >My Linktree</a>
-        </body>
-</html>
-    <h3 id="DarkModetext">Dark Mode is ON</h3>
-    <button onclick="darkMode()">Darkmode</button>
-    <button onclick="lightMode()">LightMode</button>
-    <script>
-        function darkMode() {
-            let element = document.body;
-            let content = document.getElementById("DarkModetext");
-            element.className = "dark-mode";
-            content.innerText = "Dark Mode is ON";
-        }
-        function lightMode() {
-            let element = document.body;
-            let content = document.getElementById("DarkModetext");
-            element.className = "light-mode";
-            content.innerText = "Dark Mode is OFF";
-            
-        }
-    </script>
+    window.onload = typeWriter;
+  </script>
 </body>
-</html>
-<a hidden>
-<audio autoplay>
-    <source src="GFG.ogg" type="audio/ogg">
-    <source src=
-"Sweden.mp3"
-            type="audio/mpeg">
-</audio>
-</body>
-</a>
 </html>
