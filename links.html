@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+
+  <style>
+    /* Slight dark mode background */
+    body {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex-direction: column;
+      text-align: center; /* Center the text */
+    }
+
+    /* Navigation bar styles */
+    nav {
+      position: absolute;
+      top: 20px; /* Distance from the top */
+      left: 50%; /* Centering */
+      transform: translateX(-50%); /* Adjust for centering */
+      display: flex;
+      gap: 20px; /* Space between links */
+    }
+
+    nav a {
+      color: #e0e0e0; /* Text color */
+      text-decoration: none; /* Remove underline */
+      padding: 10px; /* Padding for clickable area */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth transition */
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Background on hover */
+    }
+
+    #umbreonImage {
+      margin-top: 20px; /* Space between text and image */
+      max-width: 80%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="random.html">Random</a>
+    <a href="contact.html">Contact Me</a>
+  </nav>
+  <p>Links will go here!</p> <!-- Placeholder for links -->
+  <img id="umbreonImage" src="umbreonsleeping.pngE" alt="Umbreon"> <!-- Replace with the image URL -->
+</body>
+</html>
