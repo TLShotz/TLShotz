@@ -3,17 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-
-  <!-- Google AdSense Code -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-2908382282105784",  /* Replace with your own publisher ID */
-      enable_page_level_ads: true
-    });
-  </script>
-  <!-- End of Google AdSense Code -->
+  <title>Contact</title>
 
   <style>
     /* Slight dark mode background */
@@ -27,145 +17,46 @@
       align-items: center;
       margin: 0;
       flex-direction: column;
+      text-align: center; /* Center the text */
     }
 
-    /* Center the text */
-    .container {
-      text-align: center;
-      opacity: 0;
-      transform: translateY(100px); /* Start below the screen */
-      animation: slide-in 1s forwards; /* Slide in animation */
+    /* Navigation bar styles */
+    nav {
+      position: absolute;
+      top: 20px; /* Distance from the top */
+      left: 50%; /* Centering */
+      transform: translateX(-50%); /* Adjust for centering */
+      display: flex;
+      gap: 20px; /* Space between links */
     }
 
-    #typewriter, #redirectText, #randomMessage {
-      font-size: 24px;
+    nav a {
+      color: #e0e0e0; /* Text color */
+      text-decoration: none; /* Remove underline */
+      padding: 10px; /* Padding for clickable area */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth transition */
     }
 
-    /* Italic font for motivational messages */
-    #randomMessage {
-      font-style: italic;
-      opacity: 0; /* Hidden initially */
-      margin-top: 10px;
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Background on hover */
     }
 
-    /* Dots animation */
-    .dots::after {
-      content: "";
-    }
-
-    /* Keyframes for dots animation */
-    @keyframes dots {
-      0% {
-        content: "";
-      }
-      25% {
-        content: ".";
-      }
-      50% {
-        content: "..";
-      }
-      75% {
-        content: "...";
-      }
-    }
-
-    /* Fade in effect */
-    @keyframes fade-in {
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* Slide in from bottom */
-    @keyframes slide-in {
-      to {
-        transform: translateY(0); /* Move to center */
-        opacity: 1; /* Fade in */
-      }
+    #umbreonImage {
+      margin-top: 20px; /* Space between text and image */
+      max-width: 80%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <p>-&nbsp;&nbsp;&nbsp;&nbsp;<span id="typewriter"></span>&nbsp;&nbsp;&nbsp;&nbsp;-</p>
-    <p><span id="redirectText"></span><span class="dots"></span></p> <!-- New line for redirecting text -->
-    <p id="randomMessage"></p> <!-- Placeholder for random motivational message -->
-  </div>
-
-  <script>
-    // Text to display with typewriter effect
-    const mainText = "Hey, I'm Shotz!";
-    
-    // Array of redirecting messages
-    const redirectMessages = [
-      "Redirecting you to my page",
-      "Taking you to the my page",
-      "Hold tight, you're being redirected! (to my page)",
-      "redirecting to mah page",
-      "Just a moment,  (HURRY UP CODE)"
-    ];
-
-    // Array of motivational messages
-    const motivationalMessages = [
-      "You are loved :)",
-      "WHAT DOESN'T KILL YOU MAKES YOU STRONGER",
-      "I love dead by daylight",
-      "up up down down left right left right BA start",
-      "Keep moving forward!"
-    ];
-
-    let index = 0;
-
-    // Typewriter effect function with adjustable speed
-    function typeWriter(text, elementId, speed, callback) {
-      if (index < text.length) {
-        document.getElementById(elementId).innerHTML = text.substring(0, index + 1);
-        index++;
-        setTimeout(() => typeWriter(text, elementId, speed, callback), speed);
-      } else if (callback) {
-        callback();
-      }
-    }
-
-    // Start the dots animation
-    function startDotsAnimation() {
-      const dots = document.querySelector('.dots');
-      dots.style.animation = 'dots 1s steps(5, end) infinite'; // Start dots animation after typing
-    }
-
-    // Show random motivational message with a typewriter effect
-    function showRandomMessage() {
-      const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
-      document.getElementById('randomMessage').style.opacity = '0'; // Hide initially
-      index = 0; // Reset index for new typewriter
-      typeWriter(randomMessage, 'randomMessage', 75, () => { // Speed for motivational message
-        document.getElementById('randomMessage').style.animation = 'fade-in 1s forwards'; // Fade in after typing
-      });
-    }
-
-    // Redirect after the dots and motivational message are shown
-    function startRedirect() {
-      setTimeout(() => {
-        window.location.href = "https://e-z.bio/shotz"; // Replace with your URL
-      }, 5000); // Wait 5 seconds before redirecting
-    }
-
-    // Main flow
-    window.onload = () => {
-      // Select a random redirect message from the array
-      const randomRedirectText = redirectMessages[Math.floor(Math.random() * redirectMessages.length)];
-
-      // Typewriter effect for "Hey, I'm Shotz!" at a slower speed
-      typeWriter(mainText, 'typewriter', 100, () => {
-        index = 0; // Reset index for next text
-        // Typewriter effect for random redirect message at a faster speed
-        typeWriter(randomRedirectText, 'redirectText', 30, () => {
-          startDotsAnimation(); // Start dots after redirect text
-          showRandomMessage(); // Show random message after redirect text
-          startRedirect(); // Redirect after showing everything
-        });
-      });
-    };
-  </script>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="random.html">Random</a>
+    <a href="contact.html">Contact Me</a>
+  </nav>
+  <p>Sorry.. Nothing's here yet. Just Umbreon :)</p>
+  <img id="umbreonImage" src="URL_OF_YOUR_UMBREON_IMAGE" alt="Umbreon"> <!-- Replace with the image URL -->
 </body>
 </html>
