@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Reward</title>
+
+  <style>
+    body {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: center;
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="position:relative; width:100%; height:0px; padding-bottom:75%;">
+      <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/anmbx5?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+    </div>
+  </div>
+
+  <!-- Hidden Rick Roll audio player -->
+  <audio id="rickroll" autoplay>
+    <source src="secretreward.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // This ensures that the audio plays after a user interacts with the page (to bypass autoplay block)
+    document.addEventListener('click', function() {
+      const rickRollAudio = document.getElementById('rickroll');
+      rickRollAudio.play();
+    });
+  </script>
+</body>
+</html>
