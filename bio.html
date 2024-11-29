@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+
+  <!-- Google AdSense Code -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-2908382282105784",  /* Replace with your own publisher ID */
+      enable_page_level_ads: true
+    });
+  </script>
+  <!-- End of Google AdSense Code -->
+
+  <style>
+    /* Slight dark mode background */
+    body {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    /* Navigation bar styles */
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #e0e0e0;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Slight hover effect */
+    }
+
+    /* Center the text */
+    .container {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(100px); /* Start below the screen */
+      animation: slide-in 1s forwards; /* Slide in animation */
+    }
+
+    #typewriter, #redirectText, #randomMessage {
+      font-size: 24px;
+    }
+
+    /* Italic font for motivational messages */
+    #randomMessage {
+      font-style: italic;
+      opacity: 0; /* Hidden initially */
+      margin-top: 10px;
+    }
+
+    /* Fade in effect */
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Slide in from bottom */
+    @keyframes slide-in {
+      to {
+        transform: translateY(0); /* Move to center */
+        opacity: 1; /* Fade in */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="links.html">Links</a>
+    <a href="cats.html">Cats</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
+
+  <div class="container">
+    <p>-&nbsp;&nbsp;&nbsp;&nbsp;<span id="typewriter"></span>&nbsp;&nbsp;&nbsp;&nbsp;-</p>
+    <p><span id="redirectText"></span></p> <!-- New line for redirecting text -->
+    <p id="randomMessage"></p> <!-- Placeholder for random motivational message -->
+  </div>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="Sweden.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Text to display with typewriter effect
+    const mainText = "Hey, I'm Shotz!";
+    
+    // Array of redirecting messages
+    const redirectMessages = [
+      "Redirecting you to my page in 5 seconds..",
+      "Taking you to the my page in 5..",
+      "Hold tight, you're being redirected! this will take a bit..",
+      "redirecting in 10.. 9.. i'm not counting just wait.",
+      "Just a moment,  (HURRY UP CODE)"
+    ];
+    // Array of motivational messages
+    const motivationalMessages = [
+      "You are loved :)",
+      "WHAT DOESN'T KILL YOU MAKES YOU STRONGER",
+      "I love dead by daylight",
+      "up up down down left right left right BA start",
+      "Keep moving forward!"
+    ];
+
+    let index = 0;
+
+    // Typewriter effect function with adjustable speed
+    function typeWriter(text, elementId, speed, callback) {
+      if (index < text.length) {
+        document.getElementById(elementId).innerHTML = text.substring(0, index + 1);
+        index++;
+        setTimeout(() => typeWriter(text, elementId, speed, callback), speed);
+      } else if (callback) {
+        callback();
+      }
+    }
+
+    // Show random motivational message with a typewriter effect
+    function showRandomMessage() {
+      const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+      document.getElementById('randomMessage').style.opacity = '0'; // Hide initially
+      index = 0; // Reset index for new typewriter
+      typeWriter(randomMessage, 'randomMessage', 75, () => { // Speed for motivational message
+        document.getElementById('randomMessage').style.animation = 'fade-in 1s forwards'; // Fade in after typing
+      });
+    }
+
+    // Redirect after the motivational message is shown
+    function startRedirect() {
+      setTimeout(() => {
+        window.location.href = "https://e-z.bio/shotz"; // Replace with your URL
+      }, 5000); // Wait 5 seconds before redirecting
+    }
+
+    // Main flow
+    window.onload = () => {
+      // Select a random redirect message from the array
+      const randomRedirectText = redirectMessages[Math.floor(Math.random() * redirectMessages.length)];
+
+      // Typewriter effect for "Hey, I'm Shotz!" at a slower speed
+      typeWriter(mainText, 'typewriter', 100, () => {
+        index = 0; // Reset index for next text
+        // Typewriter effect for random redirect message at a faster speed
+        typeWriter(randomRedirectText, 'redirectText', 30, () => {
+          showRandomMessage(); // Show random message after redirect text
+          startRedirect(); // Redirect after showing everything
+        });
+      });
+    };
+  </script>
+</body>
+</html>
