@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Info</title>
+    <style>
+        body {
+            background-color: #23272A;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="slide-in" style="animation-delay: 0.2s;">Information</h1>
+        <p class="slide-in" style="animation-delay: 0.4s;">ip: mc.tlshotz.com</p>
+        <p class="slide-in" style="animation-delay: 0.6s;">type + version: Java, 1.21.4 (Fabric)</p>
+        <p class="slide-in" style="animation-delay: 0.8s;">Pvp: off</p>
+        <p class="slide-in" style="animation-delay: 1s;">Difficulty: easy</p>
+        <p class="slide-in" style="animation-delay: 1.2s;">border size: 30,000 x 30,000</p>
+        <p class="slide-in" style="animation-delay: 1.4s;">Mods:</p>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/terralith" class="slide-in" style="animation-delay: 1.6s;">Terralith</a><br>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat" class="slide-in" style="animation-delay: 1.8s;">Simple Voice Chat</a><br>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/lootr-fabric" class="slide-in" style="animation-delay: 2s;">Lootr</a><br>
+        
+        <h1 class="slide-in" style="animation-delay: 2.2s;">Rules</h1>
+        <p class="slide-in" style="animation-delay: 2.4s;">common sense</p>
+        <p class="slide-in" style="animation-delay: 2.6s;">(rules are not final and will change)</p>
+        
+        <h1 class="slide-in" style="animation-delay: 2.8s;">Extras</h1>
+        <p class="slide-in" style="animation-delay: 3s;">if you're willing to contribute to paying for za server just send me a message that would be awesome</p>
+    </div>
+</body>
+</html>
