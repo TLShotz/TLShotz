@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edge Of Sleep By Markiplier</title>
-  <style>
-    body {
-      background-color: #2b2b2b;
-      color: #e0e0e0;
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 40px;
-    }
-
-    .link-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-right: 30px;
-    }
-
-    .link-container a {
-      font-size: 20px;
-      color: #e0e0e0;
-      text-decoration: underline;
-      margin-bottom: 15px;
-    }
-
-    .image-container img {
-      max-width: 300px;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Mod</title>
+    <style>
+        body {
+            background-color: #23272A;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .typewriter {
+            display: inline-block;
+            border-right: 2px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 2s steps(30, end) forwards, blink 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container">
-    <div class="link-container">
-      <h1>Edge Of Sleep By Markiplier</h1>
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
-      <a href="#link4">Link 4</a>
-      <a href="#link5">Link 5</a>
-      <a href="#link6">Link 6</a>
+    <div class="container">
+        <h1 class="slide-in" style="animation-delay: 0.2s;">Current Mod</h1>
+        <h2 class="slide-in" style="animation-delay: 0.4s;"><span class="typewriter">Cave Horror Project - Chapter 1 | 1.20.1 - Forge</span></h2>
     </div>
-
-    <div class="image-container">
-      <img src="path/to/your-image.jpg" alt="Edge Of Sleep">
-    </div>
-  </div>
-
 </body>
 </html>
