@@ -45,8 +45,23 @@
       animation: slide-in 1s forwards;
     }
 
-    #typewriter, #subText {
-      font-size: 24px;
+    #typewriter {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    #subText p {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    #subText a {
+      color: #80c0ff;
+      text-decoration: underline;
+    }
+
+    #subText a:hover {
+      color: #a0e0ff;
     }
 
     @keyframes slide-in {
@@ -68,16 +83,32 @@
 
   <div class="container">
     <p>-&nbsp;&nbsp;&nbsp;&nbsp;<span id="typewriter"></span>&nbsp;&nbsp;&nbsp;&nbsp;-</p>
-    <p><span id="subText"></span></p>
+    <div id="subText"></div>
   </div>
 
   <script>
     const mainText = "Hey, I'm Shotz!";
-    const subText = "I don't know what to put here yet.";
+
+    // Each line has text + speed (ms per character)
+    const subTexts = [
+      { text: "I don't know what to put here yet.", speed: 40 },
+       { text: "(this will redirect to my info/bio page in 25 seconds)", speed: 25 },
+        { text: "\u00A0", speed: 0 }, // blank line for spacing
+      { text: "Current PC Rig:", speed: 60 },
+      { text: "CPU: Intel(R) Core(TM) i5-9600K CPU @ 3.70Ghz", speed: 20 },
+      { text: "GPU: NVIDIA GeForce GTX 1660 Super", speed: 20 },
+      { text: "RAM: T-Force Vulcan Z DDR4 16GB", speed: 20 },
+      { text: "OS Drive: Intel Optane H10 512GB M.2 NVMe", speed: 20 },
+      { text: "Game Drive: Seagate FireCuda 1TB SSHD", speed: 20 },
+      { text: "Storage Drive: WD Green 2TB HDD", speed: 20 },
+      { text: "OS: Windows 11 Home", speed: 20 }
+    ];
+
     let index = 0;
 
     function typeWriter(text, elementId, speed, callback) {
       if (index < text.length) {
+        // Insert character
         document.getElementById(elementId).innerHTML += text.charAt(index);
         index++;
         setTimeout(() => typeWriter(text, elementId, speed, callback), speed);
@@ -87,10 +118,31 @@
     }
 
     window.onload = () => {
+      // Type main text first
       typeWriter(mainText, 'typewriter', 75, () => {
-        index = 0;
-        typeWriter(subText, 'subText', 40);
+        let subIndex = 0;
+
+        function typeNextLine() {
+          if (subIndex < subTexts.length) {
+            index = 0;
+            const newLine = document.createElement("p");
+            const lineId = "line" + subIndex;
+            newLine.id = lineId;
+            document.getElementById("subText").appendChild(newLine);
+
+            typeWriter(subTexts[subIndex].text, lineId, subTexts[subIndex].speed, () => {
+              subIndex++;
+              setTimeout(typeNextLine, 400); // delay before next line
+            });
+          }
+        }
+
+        typeNextLine();
       });
+
+       setTimeout(() => {
+    window.location.href = "https://www.tlshotz.com/bio";
+  }, 25000);
     };
   </script>
 </body>
